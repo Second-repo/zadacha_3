@@ -19,15 +19,15 @@ document.getElementById('feedingForm').addEventListener('submit', function(event
         if (currentFood < b) {
             totalTime += r;
             currentFood = m;
-            document.getElementById('statusOutput').innerHTML += `Бабушка наполняет миску<br>`;
+            document.getElementById('statusOutput').innerHTML += `<br>Бабушка наполняет миску<br>`;
         }
         totalTime += t;
         currentFood -= b;
-        document.getElementById('statusOutput').innerHTML += `Котик под номером ${i + 1} подошел к миске<br>`;
+        document.getElementById('statusOutput').innerHTML += `<br>Котик под номером ${i + 1} подошел к миске<br>`;
         document.getElementById('statusOutput').innerHTML += `Котик под номером ${i + 1} отошел от миски<br>`;
     }
 
-    document.getElementById('statusOutput').innerHTML += `Всего затрачено времени: ${totalTime} сек.<br>`;
+    document.getElementById('statusOutput').innerHTML += `<br>Всего затрачено времени: ${totalTime} сек.<br>`;
 });
 
 document.getElementById('clearButton').addEventListener('click', function() {
